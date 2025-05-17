@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><toestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bwb-ng-vast-deel="http://wetten.overheid.nl/id/BWBR0049702/2024-05-17/0" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-toestand/2016-1/xsd/toestand_2016-1.xsd" bwb-id="BWBR0049702" inwerkingtreding="2024-05-17"><bwb-inputbestand/><bwb-wijzigingen/><redactionele-correcties/><wetgeving dtdversie="2.0" soort="ministeriele-regeling" stam-id="17102333" versie-id="30099182" id="C43126641" label-id="17011024" inwerkingtredingsdatum="2024-05-17">
+  <intitule bwb-ng-variabel-deel="/Intitule" stam-id="17102363" versie-id="30099042" id="C43126501" label-id="17010884" inwerking="2024-05-17" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">Besluit van de Minister van Binnenlandse Zaken en Koninkrijksrelaties van 7 mei 2024, nr. 2024-0000233924, tot verlening van mandaat en machtiging aan de Toelatingsorganisatie Kwaliteitsborging Bouw ten behoeve van de uitvoering van de wettelijke taken certificering werkzaamheden aan gasverbrandingsinstallaties (CO-stelsel) en tot verlening van volmacht om toe te zien op het gebruik van het beeldmerk ‘CO-VRIJ’<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata></meta-data></intitule>
+  <citeertitel bwb-ng-variabel-deel="/Citeertitel" status="officieel" stam-id="17102373" versie-id="30099052" id="C43126511" label-id="17010894" inwerking="2024-05-17" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16">Besluit mandaat en machtiging Toelatingsorganisatie Kwaliteitsborging Bouw ten behoeve van de uitvoering van de wettelijke taken certificering werkzaamheden aan gasverbrandingsinstallaties (CO-stelsel) en tot verlening van volmacht om toe te zien op het gebruik van het beeldmerk ‘CO-VRIJ’<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata></meta-data></citeertitel>
+  <regeling>
+    <aanhef bwb-ng-variabel-deel="/Aanhef" stam-id="17102383" versie-id="30099062" id="C43126521" label-id="17010904" inwerking="2024-05-17" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <wie>De Minister van Binnenlandse Zaken en Koninkrijksrelaties,</wie>
+  <considerans>
+    <considerans.al bevat="grondslag">Gelet op <extref doc="jci1.3:c:BWBR0005537&amp;afdeling=10.1.1" label-id="2820454" verwijzing-id="3305904" bwb-id="BWBR0005537">afdeling 10.1.1 van de Algemene wet bestuursrecht</extref>, de <extref doc="jci1.3:c:BWBR0020495" label-id="8726284" verwijzing-id="3305905" bwb-id="BWBR0020495">kaderwet voor zelfstandige bestuursorganen</extref> (ZBO’s) en de <extref doc="jci1.3:c:BWBR0005181&amp;artikel=92" label-id="2985594" verwijzing-id="3305906" bwb-id="BWBR0005181">artikelen 92</extref> en <extref doc="jci1.3:c:BWBR0005181&amp;artikel=93" label-id="2985684" verwijzing-id="3305907" bwb-id="BWBR0005181">93 van de Woningwet</extref></considerans.al>
+    <considerans.al bevat="gezien">Gezien de schriftelijke instemming van het bestuur van de Toelatingsorganisatie Kwaliteitsborging Bouw overeenkomstig <extref doc="jci1.3:c:BWBR0005537&amp;artikel=10:4" label-id="2820364" verwijzing-id="3305908" bwb-id="BWBR0005537">artikel 10:4 van de Algemene wet bestuursrecht</extref> d.d.15 maart 2024.</considerans.al>
+  </considerans>
+  <afkondiging>
+    <al>BESLUIT:</al>
+  </afkondiging>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata></meta-data></aanhef>
+    <regeling-tekst>
+      <artikel bwb-ng-variabel-deel="/Artikel1" stam-id="17102393" versie-id="30099072" id="C43126531" label-id="17010914" inwerking="2024-05-17" label="Artikel 1" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">1</nr>
+  </kop>
+  <al>In dit besluit wordt verstaan onder:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeela">
+      <li.nr>a.</li.nr>
+      <al>
+        <nadruk type="cur">Besluit bouwwerken leefomgeving (Bbl):</nadruk> houdende regels over bouwwerken in de fysieke leefomgeving, waaronder regels over werkzaamheden aan gasverbrandingsinstallaties, verbrandingsluchttoevoervoorzieningen en rookgasafvoervoorzieningen;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1&amp;o=a&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=a"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeelb">
+      <li.nr>b.</li.nr>
+      <al>
+        <nadruk type="cur">Besluit kwaliteit leefomgeving (Bkl):</nadruk> houdende regels over de kwaliteit van de fysieke leefomgeving en de uitoefening van taken en bevoegdheden, waaronder regels over de aanwijzing van certificatie-instellingen en de aanwijzing van certificatie-schema’s;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1&amp;o=b&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=b"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeelc">
+      <li.nr>c.</li.nr>
+      <al>
+        <nadruk type="cur">Omgevingsbesluit:</nadruk> houdende procedurele regels en regels over algemene onderwerpen over het beschermen en benutten van de fysieke leefomgeving;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1&amp;o=c&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=c"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeeld">
+      <li.nr>d.</li.nr>
+      <al>
+        <nadruk type="cur">Minister:</nadruk> de Minister van Binnenlandse Zaken en Koninkrijksrelaties;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1&amp;o=d&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=d"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeele">
+      <li.nr>e.</li.nr>
+      <al>
+        <nadruk type="cur">Toelatingsorganisatie:</nadruk> Toelatingsorganisatie Kwaliteitsborging Bouw.</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1&amp;o=e&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=e"/></jcis></meta-data></li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=1&amp;g=2024-05-17" onderdeel="artikel=1" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=1"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=1" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=1"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel2" stam-id="17102403" versie-id="30099082" id="C43126541" label-id="17010924" inwerking="2024-05-17" label="Artikel 2" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">2</nr>
+  </kop>
+  <al>Aan het bestuur van de toelatingsorganisatie wordt ten behoeve van zijn werkzaamheden mandaat en machtiging verleend voor de uitoefening van de bevoegdheden van de Minister, bedoeld in:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+    <li bwb-ng-variabel-deel="/Artikel2/Onderdeela">
+      <li.nr>a.</li.nr>
+      <al>
+        <extref doc="jci1.3:c:BWBR0005181&amp;artikel=92" label-id="2985594" verwijzing-id="3305909" bwb-id="BWBR0005181">artikel 92, eerste lid Woningwet</extref> juncto <extref doc="jci1.3:c:BWBR0005181&amp;artikel=3" label-id="2984454" verwijzing-id="3305910" bwb-id="BWBR0005181">artikel 3 Woningwet</extref>, artikel 92, tweede lid, Woningwet en <extref doc="jci1.3:c:BWBR0005181&amp;artikel=93" label-id="2985684" verwijzing-id="3305912" bwb-id="BWBR0005181">artikel 93 Woningwet</extref>;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;o=a&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=a"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel2/Onderdeelb">
+      <li.nr>b.</li.nr>
+      <al>
+        <extref doc="jci1.3:c:BWBR0041297&amp;artikel=6.45" label-id="15576644" verwijzing-id="3305913" bwb-id="BWBR0041297">artikel 6.45 van het Bbl</extref>;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;o=b&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=b"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel2/Onderdeelc">
+      <li.nr>c.</li.nr>
+      <al>
+        <extref doc="jci1.3:c:BWBR0041313&amp;artikel=3.74" label-id="16281774" verwijzing-id="3305914" bwb-id="BWBR0041313">Artikel 3.74, eerste tot en met het derde lid, van het Bkl</extref>;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;o=c&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=c"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel2/Onderdeeld">
+      <li.nr>d.</li.nr>
+      <al>
+        <extref doc="jci1.3:c:BWBR0041313&amp;artikel=3.75" label-id="16281784" verwijzing-id="3305915" bwb-id="BWBR0041313">Artikel 3.75, het eerste tot en met het vierde lid, van het Bkl</extref>;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;o=d&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=d"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel2/Onderdeele">
+      <li.nr>e.</li.nr>
+      <al>
+        <extref doc="jci1.3:c:BWBR0041313&amp;artikel=11.25" label-id="16281824" verwijzing-id="3305916" bwb-id="BWBR0041313">Artikel 11.25, het eerste tot en met het vierde lid, van het Bkl</extref>;</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;o=e&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=e"/></jcis></meta-data></li>
+    <li bwb-ng-variabel-deel="/Artikel2/Onderdeelf">
+      <li.nr>f.</li.nr>
+      <al>
+        <extref doc="jci1.3:c:BWBR0041313&amp;artikel=11.26" label-id="16281834" verwijzing-id="3305917" bwb-id="BWBR0041313">Artikel 11.26, het eerste tot en met het vijfde lid, met uitzondering van de laatste volzin van het vierde lid, van het Bkl</extref>.</al>
+    <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;o=f&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=f"/></jcis></meta-data></li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=2&amp;g=2024-05-17" onderdeel="artikel=2" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=2"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=2" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel2a" stam-id="17102413" versie-id="30099092" id="C43126551" label-id="17010934" inwerking="2024-05-17" label="Artikel 2a" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">2a</nr>
+  </kop>
+  <al>Aan het bestuur van de toelatingsorganisatie wordt volmacht verleend voor de uitoefening van de bevoegdheden van de Minister, om toe te zien op het gebruik van het beeldmerk ‘CO-VRIJ’ als bedoeld in <extref doc="jci1.3:c:BWBR0041297&amp;artikel=6.47" label-id="15576664" verwijzing-id="3305918" bwb-id="BWBR0041297">artikel 6.47 Bbl</extref>.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=2a&amp;g=2024-05-17" onderdeel="artikel=2a" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=2a"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2a&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=2a" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=2a"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel3" stam-id="17102423" versie-id="30099102" id="C43126561" label-id="17010944" inwerking="2024-05-17" label="Artikel 3" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">3</nr>
+  </kop>
+  <al>Het op grond van dit besluit verleende mandaat en machtiging ten behoeve van de toelatingsorganisatie omvat mede de bevoegdheid tot het vaststellen, wijzigen of intrekken van beleidsregels met betrekking tot de uitoefening van de bevoegdheden, bedoeld in <intref doc="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010924" verwijzing-id="3305925" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel2">artikel 2</intref> van dit besluit.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=3&amp;g=2024-05-17" onderdeel="artikel=3" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=3"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=3&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=3" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=3"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel4" stam-id="17102433" versie-id="30099112" id="C43126571" label-id="17010954" inwerking="2024-05-17" label="Artikel 4" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">4</nr>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel4/Lid1" label-id="17010954L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Aan het bestuur van de toelatingsorganisatie wordt mandaat en machtiging verleend tot het nemen van besluiten en het verrichten van overige handelingen die verband houden met de uitoefening van de bevoegdheden, bedoeld in <intref doc="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010924" verwijzing-id="3305926" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel2">artikel 2</intref> van dit besluit.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=1&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel4/Lid2" label-id="17010954L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Aan het bestuur van de toelatingsorganisatie wordt mandaat en machtiging verleend:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Artikel4/Lid2/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>om namens de Minister een besluit te nemen op een bezwaarschrift gericht tegen een besluit als bedoeld in <intref doc="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010924" verwijzing-id="3305927" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel2">artikel 2</intref>;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=2&amp;o=a&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Artikel4/Lid2/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>verweer te voeren, in geval beroep of hoger beroep is ingesteld ter zake van een besluit op bezwaar als bedoeld in onderdeel a;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=2&amp;o=b&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=b"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Artikel4/Lid2/Onderdeelc">
+        <li.nr>c.</li.nr>
+        <al>verweer te voeren, in geval een voorlopige voorziening is ingesteld in het kader van een bezwaar, beroep of hoger beroep ter zake van een besluit als bedoeld in <intref doc="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010924" verwijzing-id="3305928" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel2">artikel 2</intref>;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=2&amp;o=c&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=c"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Artikel4/Lid2/Onderdeeld">
+        <li.nr>d.</li.nr>
+        <al>en om een procesbesluit te nemen ter zake het instellen van beroep, hoger beroep alsmede het indienen van een verzoek om voorlopige voorziening.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=2&amp;o=d&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="o=d"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=2&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel4/Lid3" label-id="17010954L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Op grond van <extref doc="jci1.3:c:BWBR0005537&amp;artikel=10:3" label-id="2820354" verwijzing-id="3305919" bwb-id="BWBR0005537">artikel 10:3, derde lid, Awb</extref> wordt mandaat tot het beslissen op een bezwaarschrift of op een verzoek als bedoeld in <extref doc="jci1.3:c:BWBR0005537&amp;artikel=7:1a" label-id="5860644" verwijzing-id="3305920" bwb-id="BWBR0005537">artikel 7:1a Awb, eerste lid</extref>, niet verleend aan degene die het besluit waartegen het bezwaar zich richt, krachtens mandaat heeft genomen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=3&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel4/Lid4" label-id="17010954L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Aan het bestuur van de toelatingsorganisatie wordt mandaat en machtiging verleend tot het namens de Minister afhandelen van klachten, niet zijnde klachten over het bestuur van de toelatingsorganisatie, als bedoeld in <extref doc="jci1.3:c:BWBR0005537&amp;titeldeel=9.1" label-id="6767124" verwijzing-id="3305921" bwb-id="BWBR0005537">titel 9.1 Awb</extref> (het voeren van correspondentie, het nemen en doen uitgaan van beslissingen ter zake, met inachtneming van de bepalingen in <extref doc="jci1.3:c:BWBR0005537&amp;hoofdstuk=9" label-id="2816704" verwijzing-id="3305922" bwb-id="BWBR0005537">hoofdstuk 9 van de Awb</extref>).</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=4&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=4"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel4/Lid5" label-id="17010954L5">
+    <lidnr status="officieel">5</lidnr>
+    <al>Aan het bestuur van de toelatingsorganisatie wordt machtiging verleend tot het namens de Minister behandelen en beantwoorden van burgerbrieven, daarin zo nodig inhoudelijk bijgestaan door beleidsdirecties.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;lid=5&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=5"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=4&amp;g=2024-05-17" onderdeel="artikel=4" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=4"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=4" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=4"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel5" stam-id="17102443" versie-id="30099122" id="C43126581" label-id="17010964" inwerking="2024-05-17" label="Artikel 5" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">5</nr>
+    <titel status="officieel">Ondermandaat</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid1" label-id="17010964L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Het bestuur van de toelatingsorganisatie is bevoegd ten aanzien van de bevoegdheden en taken zoals genoemd in <intref doc="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010924" verwijzing-id="3305929" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel2">artikel 2</intref> en <intref doc="jci1.3:c:BWBR0049702&amp;artikel=4&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010954" verwijzing-id="3305930" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel4">4</intref> ondermandaat en machtiging te verlenen aan de onder het bestuur ressorterende functionarissen, die werkzaam zijn voor de organisatie.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=5&amp;lid=1&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid2" label-id="17010964L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Het verlenen van ondermandaat of machtiging alsmede wijziging daarvan, geschiedt schriftelijk en wat de formulering betreft in overeenstemming met het Mandaatbesluit van de Minister.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=5&amp;lid=2&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid3" label-id="17010964L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Een afschrift van besluiten inzake ondermandaat of machtiging als bedoeld in het tweede lid wordt gezonden aan de secretaris-generaal van het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en aan degenen aan wie krachtens dit besluit ondermandaat dan wel machtiging is verleend.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=5&amp;lid=3&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid4" label-id="17010964L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Het bestuur van de toelatingsorganisatie is bevoegd volmacht te verlenen om toe te zien op het gebruik van het beeldmerk ‘CO-VRIJ’ als bedoeld in <extref doc="jci1.3:c:BWBR0041297&amp;artikel=6.47" label-id="15576664" verwijzing-id="3305923" bwb-id="BWBR0041297">artikel 6.47 Bbl</extref>, aan de onder het bestuur ressorterende functionarissen, die werkzaam zijn voor de organisatie.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=5&amp;lid=4&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=4"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=5&amp;g=2024-05-17" onderdeel="artikel=5" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=5"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=5&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=5" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=5"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel6" stam-id="17102453" versie-id="30099132" id="C43126591" label-id="17010974" inwerking="2024-05-17" label="Artikel 6" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">6</nr>
+    <titel status="officieel">Informatie- en verslagverplichting</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel6/Lid1" label-id="17010974L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Het bestuur van de toelatingsorganisatie informeert de Minister over zwaarwegende en politiek-bestuurlijk gevoelige omstandigheden en gebeurtenissen die betrekking hebben op of van invloed kunnen zijn op de gemandateerde bevoegdheden.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=6&amp;lid=1&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel6/Lid2" label-id="17010974L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Het eerste lid is van overeenkomstige toepassing op bevoegdheden die zijn verleend op basis van machtiging.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=6&amp;lid=2&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel6/Lid3" label-id="17010974L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>De toelatingsorganisatie doet jaarlijks vóór 1 juli verslag aan de Minister over de beoordeling en analyse van het jaarlijks door aangewezen certificerende instellingen in te dienen verslag van uitgevoerde werkzaamheden, de rechtmatigheid en doeltreffendheid van die werkzaamheden in het afgelopen kalenderjaar en de meldingen van (bijna-)ongevallen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=6&amp;lid=3&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=6&amp;g=2024-05-17" onderdeel="artikel=6" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=6"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=6&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=6" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=6"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel7" stam-id="17102463" versie-id="30099142" id="C43126601" label-id="17010984" inwerking="2024-05-17" label="Artikel 7" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">7</nr>
+    <titel status="officieel">Ondertekening</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid1" label-id="17010984L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Indien een besluit wordt genomen bij of krachtens een in dit besluit gemandateerde bevoegdheid, luidt de ondertekening:</al>
+    <al>De Minister van Binnenlandse Zaken en Koninkrijksrelaties,</al>
+    <al>namens deze:</al>
+    <al>gevolgd door functieaanduiding, handtekening en naam van de gemandateerde</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7&amp;lid=1&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid2" label-id="17010984L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Het krachtens mandaat of machtiging ondertekenen van automatisch gegenereerde stukken vindt plaats op de volgende wijze:</al>
+    <al>De Minister van Binnenlandse Zaken en Koninkrijksrelaties,</al>
+    <al>namens deze:</al>
+    <al>gevolgd door functieaanduiding en naam van de gemandateerde functionaris</al>
+    <al>Dit bericht is automatisch gegenereerd en bevat daarom geen handtekening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7&amp;lid=2&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid3" label-id="17010984L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>In afwijking van het bepaalde in het tweede lid kan een automatisch gegenereerd stuk ook met een handtekening worden ondertekend. De ondertekening geschiedt dan overeenkomstig het bepaalde in het eerste lid.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7&amp;lid=3&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid4" label-id="17010984L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>In geval van uitoefening van een ondertekeningsmandaat worden uitgaande stukken ondertekend met:</al>
+    <al>‘Overeenkomstig het/de door de Minister van Binnenlandse Zaken en Koninkrijksrelaties,</al>
+    <al>namens deze, door (naam en functie van de gemandateerde) genomen besluit,</al>
+    <al>ondertekend door:’</al>
+    <al>Gevolgd door de functieaanduiding van de functionaris die gemachtigd is tot het ondertekenen en zijn of haar handtekening en naam.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7&amp;lid=4&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=4"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid5" label-id="17010984L5">
+    <lidnr status="officieel">5</lidnr>
+    <al>Bij afwezigheid van de tot tekenen aangewezen functionaris zal alleen diegene tekenen die daartoe in het kader van de ondermandatering formeel is aangewezen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7&amp;lid=5&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=5"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=7&amp;g=2024-05-17" onderdeel="artikel=7" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=7"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=7" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=7"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel8" stam-id="17102473" versie-id="30099152" id="C43126611" label-id="17010994" inwerking="2024-05-17" label="Artikel 8" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">8</nr>
+    <titel status="officieel">Aanwijzing toezichthouders</titel>
+  </kop>
+  <al>De ambtenaren van de toelatingsorganisatie worden aangewezen als ambtenaren belast met het toezicht op de naleving van het bepaalde bij of krachtens <intref doc="jci1.3:c:BWBR0049702&amp;artikel=2&amp;z=2024-05-17&amp;g=2024-05-17" label-id="17010924" verwijzing-id="3305931" bwb-id="BWBR0049702" bwb-ng-variabel-deel="/Artikel2">artikel 2</intref> van dit besluit.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=8&amp;g=2024-05-17" onderdeel="artikel=8" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=8"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=8&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=8" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=8"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel9" stam-id="17102483" versie-id="30099162" id="C43126621" label-id="17011004" inwerking="2024-05-17" label="Artikel 9" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">9</nr>
+    <titel status="officieel">Citeertitel, inwerkingtreding en publicatie</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel9/Lid1" label-id="17011004L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Dit besluit treedt in werking met ingang van de dag na plaatsing in de Staatscourant en werkt terug tot en met 1 januari 2024.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=9&amp;lid=1&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel9/Lid2" label-id="17011004L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Met de inwerkingtreding van het onderhavige besluit wordt het <extref doc="jci1.3:c:BWBR0046694" label-id="16290414" verwijzing-id="3305924" bwb-id="BWBR0046694">Besluit mandaat en machtiging Toelatingsorganisatie Kwaliteitsborging Bouw inzake uitvoering wettelijke taken certificering werkzaamheden aan gasverbrandingsinstallaties</extref> ingetrokken.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=9&amp;lid=2&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel9/Lid3" label-id="17011004L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>Het onderhavige besluit wordt aangehaald als: ‘Besluit mandaat en machtiging Toelatingsorganisatie Kwaliteitsborging Bouw ten behoeve van de uitvoering van de wettelijke taken certificering werkzaamheden aan gasverbrandingsinstallaties (CO-stelsel) en tot verlening van volmacht om toe te zien op het gebruik van het beeldmerk ‘CO-VRIJ’’.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=9&amp;lid=3&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel9/Lid4" label-id="17011004L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Het onderhavige besluit zal met de toelichting in de Staatscourant worden geplaatst en worden gepubliceerd op de website van de Toelatingsorganisatie Kwaliteitsborging Bouw.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=9&amp;lid=4&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="lid=4"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;artikel=9&amp;g=2024-05-17" onderdeel="artikel=9" korte-verwijzing="1.0:c:BWBR0049702&amp;artikel=9"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;artikel=9&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="artikel=9" korte-verwijzing="jci1.3:c:BWBR0049702&amp;artikel=9"/></jcis></meta-data></artikel>
+    </regeling-tekst>
+    <regeling-sluiting bwb-ng-variabel-deel="/SlotformulierEnOndertekening" stam-id="17102493" versie-id="30099172" id="C43126631" label-id="17011014" inwerking="2024-05-17" bron="Stcrt.2024-15871" effect="nieuwe-regeling" ondertekening_bron="2024-05-07" publicatie_bron="2024-05-16" publicatie_iwt="2024-05-16" status="goed">
+  <gegeven>
+    <dagtekening>
+      <plaats>’s-Gravenhage</plaats>
+      <datum isodatum="2024-05-07">7 mei 2024</datum>
+    </dagtekening>
+  </gegeven>
+  <ondertekening>
+    <functie>De Minister van Binnenlandse Zaken en Koninkrijksrelaties,</functie>
+    <naam>
+      <voornaam>H.M. de</voornaam>
+      <achternaam>Jonge</achternaam>
+    </naam>
+  </ondertekening>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata></meta-data></regeling-sluiting>
+  </regeling>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stcrt" urlidentifier="stcrt-2024-15871"><publicatiejaar>2024</publicatiejaar><publicatienr>15871</publicatienr><uitgiftedatum isodatum="2024-05-16">16-05-2024</uitgiftedatum><ondertekeningsdatum isodatum="2024-05-07">07-05-2024</ondertekeningsdatum><kenmerk>2024-0000233924</kenmerk></publicatie><inwerkingtreding.datum isodatum="2024-05-17">17-05-2024</inwerkingtreding.datum><terugwerkend.datum datum-scope="tot-en-met" isodatum="2024-01-01">01-01-2024</terugwerkend.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0049702&amp;g=2024-05-17" onderdeel="wetgeving" korte-verwijzing="1.0:c:BWBR0049702"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0049702&amp;z=2024-05-17&amp;g=2024-05-17" onderdeel="wetgeving" korte-verwijzing="jci1.3:c:BWBR0049702"/></jcis></meta-data></wetgeving></toestand>
