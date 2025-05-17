@@ -63,6 +63,7 @@ jobs:
           User=ec2-user
           WorkingDirectory=/home/ec2-user/legal-ai-app
           Environment="PATH=/home/ec2-user/venv/bin"
+          Environment="GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"
           ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
           Restart=always
           RestartSec=3
