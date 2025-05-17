@@ -1,6 +1,6 @@
 <?php
-// Example production configuration file
-// Copy this file to production.php and update with your actual values
+// Example production configuration
+// Copy this to production.php and update with your actual values
 
 return [
     'db_host' => 'your_host',
