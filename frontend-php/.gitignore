@@ -1,4 +1,7 @@
 # Sensitive configuration files
+frontend-php/config/env.php
+config/env.php
+**/env.php
 private/config/env.php
 config/environments/production.php
 deploy.ps1
