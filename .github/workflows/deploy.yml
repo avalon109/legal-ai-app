@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main
+      - main  # or master, depending on your default branch
 
 jobs:
   deploy:
@@ -26,58 +26,64 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          # Update system and install required packages
-          sudo apt-get update
-          sudo apt-get install -y python3-venv python3-pip git
-
-          # Configure git
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-          # Create application directory if it doesn't exist
-          mkdir -p /home/ubuntu/legal-ai-app
-          cd /home/ubuntu/legal-ai-app
-
-          # Clone or update repository
-          if [ ! -d ".git" ]; then
-            git clone https://github.com/${{ github.repository }}.git .
-          else
-            git fetch origin
-            git reset --hard origin/main
+          # Install git if not installed
+          which git || sudo yum install -y git
+          
+          # Install Python dependencies if needed
+          which pip3 || sudo yum install -y python3-pip
+          
+          # Clean up previous deployment if it exists
+          rm -rf ~/legal-ai-app
+          
+          # Clone the repository
+          git clone https://github.com/avalon109/legal-ai-app.git ~/legal-ai-app
+          cd ~/legal-ai-app
+          
+          # Set up or update virtual environment
+          python3 -m venv ~/venv || echo "venv already exists"
+          source ~/venv/bin/activate
+          
+          # Install requirements
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          elif [ -f backend/requirements.txt ]; then
+            pip install -r backend/requirements.txt
           fi
-
-          # Create and activate virtual environment if it doesn't exist
-          if [ ! -d "venv" ]; then
-            python3 -m venv venv
-          fi
-          source venv/bin/activate
-
-          # Install dependencies
-          pip install -r backend/requirements.txt
-
-          # Create systemd service file
-          sudo tee /etc/systemd/system/legal-ai-app.service << EOF
+          
+          # Create or update systemd service file
+          cat > ~/legal-ai-app.service << 'EOL'
           [Unit]
-          Description=Legal AI API Service
+          Description=Legal AI Application
           After=network.target
 
           [Service]
-          User=ubuntu
-          WorkingDirectory=/home/ubuntu/legal-ai-app/backend
-          Environment="PATH=/home/ubuntu/legal-ai-app/venv/bin"
-          ExecStart=/home/ubuntu/legal-ai-app/venv/bin/python main.py
+          User=ec2-user
+          WorkingDirectory=/home/ec2-user/legal-ai-app
+          Environment="PATH=/home/ec2-user/venv/bin"
+          ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/app.py
           Restart=always
+          RestartSec=3
 
           [Install]
           WantedBy=multi-user.target
-          EOF
-
-          # Reload systemd and enable service
+          EOL
+          
+          # Move service file to systemd directory and set permissions
+          sudo mv ~/legal-ai-app.service /etc/systemd/system/
+          sudo chmod 644 /etc/systemd/system/legal-ai-app.service
+          
+          # Reload systemd, enable and restart service
           sudo systemctl daemon-reload
           sudo systemctl enable legal-ai-app.service
           sudo systemctl restart legal-ai-app.service
-
-          # Set proper permissions
-          sudo chown -R ubuntu:ubuntu /home/ubuntu/legal-ai-app
-
-          echo "Deployment completed successfully!" 
+          
+          # Check if service is running
+          sudo systemctl status legal-ai-app.service
+          
+          # Show the last few lines of the logs
+          sudo journalctl -u legal-ai-app.service -n 20
+          
+          # Make sure security group allows traffic on port 8000
+          # (Note: This should be done manually in the AWS console)
+          
+          echo "Deployment completed"
