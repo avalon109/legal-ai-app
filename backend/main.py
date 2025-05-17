@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 import json
 from pydantic import BaseModel
+from gemini_client import get_ai_explanation
 
 app = FastAPI()
 
@@ -56,6 +57,23 @@ async def receive_message_with_files(
         "files": file_details,
         "received_at": "timestamp"  # You might want to add actual timestamp here
     }
+
+@app.get("/ai-explanation")
+async def get_explanation():
+    """
+    Endpoint to get an AI explanation using Gemini
+    """
+    try:
+        explanation = get_ai_explanation()
+        return {
+            "status": "success",
+            "explanation": explanation
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": str(e)
+        }
 
 if __name__ == "__main__":
     import uvicorn
