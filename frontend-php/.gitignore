@@ -1,0 +1,36 @@
+# Sensitive configuration files
+frontend-php/config/env.php
+config/env.php
+**/env.php
+private/config/env.php
+config/environments/production.php
+deploy.ps1
+
+# Environment files
+.env
+*.env
+
+# PHP dependencies
+/vendor/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/ 

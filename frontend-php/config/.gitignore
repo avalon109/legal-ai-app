@@ -1,0 +1,30 @@
+# PHP specific
+vendor/
+composer.lock
+.env
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Application specific
+/uploads/*
+!/uploads/.gitkeep
+/config/environments/development.php
+*.log
+
+# Dependencies
+/node_modules/
+/bower_components/
+
+# Temporary files
+*.swp
+*.swo
+*~
+*.tmp 
