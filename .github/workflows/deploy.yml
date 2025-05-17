@@ -32,8 +32,33 @@ jobs:
           # Install git if not installed
           which git || sudo yum install -y git
           
-          # Install Python dependencies if needed
-          which pip3 || sudo yum install -y python3-pip
+          # Install Python 3.12 and its dependencies
+          sudo yum update -y
+          sudo yum groupinstall -y "Development Tools"
+          sudo yum install -y openssl-devel bzip2-devel libffi-devel xz-devel
+          
+          # Check if Python 3.12 is already installed
+          if ! command -v python3.12 &> /dev/null; then
+            echo "Installing Python 3.12..."
+            cd /tmp
+            wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz
+            tar xzf Python-3.12.2.tgz
+            cd Python-3.12.2
+            ./configure --enable-optimizations
+            sudo make altinstall
+            cd ~
+          else
+            echo "Python 3.12 is already installed"
+          fi
+          
+          # Install Rust only if not already installed
+          if ! command -v rustc &> /dev/null; then
+            echo "Installing Rust..."
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+            source "$HOME/.cargo/env"
+          else
+            echo "Rust is already installed"
+          fi
           
           # Clean up previous deployment if it exists
           rm -rf ~/legal-ai-app
@@ -42,9 +67,12 @@ jobs:
           git clone https://github.com/avalon109/legal-ai-app.git ~/legal-ai-app
           cd ~/legal-ai-app
           
-          # Set up or update virtual environment
-          python3 -m venv ~/venv || echo "venv already exists"
+          # Set up or update virtual environment with Python 3.12
+          python3.12 -m venv ~/venv || echo "venv already exists"
           source ~/venv/bin/activate
+          
+          # Upgrade pip
+          pip install --upgrade pip
           
           # Install requirements
           if [ -f requirements.txt ]; then
@@ -62,7 +90,7 @@ jobs:
           [Service]
           User=ec2-user
           WorkingDirectory=/home/ec2-user/legal-ai-app
-          Environment="PATH=/home/ec2-user/venv/bin"
+          Environment="PATH=/home/ec2-user/venv/bin:/home/ec2-user/.cargo/bin"
           Environment="GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"
           ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
           Restart=always

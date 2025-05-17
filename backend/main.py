@@ -4,6 +4,7 @@ from typing import List
 import json
 from pydantic import BaseModel
 from gemini_client import get_ai_explanation
+from legal_crew.legal_crew import LegalCrew
 
 app = FastAPI()
 
@@ -18,6 +19,9 @@ app.add_middleware(
 
 class MessageRequest(BaseModel):
     message: str
+
+class LegalQuestion(BaseModel):
+    question: str
 
 @app.get("/")
 async def root():
@@ -68,6 +72,24 @@ async def get_explanation():
         return {
             "status": "success",
             "explanation": explanation
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": str(e)
+        }
+
+@app.post("/legal-advice")
+async def get_legal_advice(request: LegalQuestion):
+    """
+    Endpoint to get legal advice using our crew of legal experts
+    """
+    try:
+        legal_crew = LegalCrew()
+        result = legal_crew.process_question(request.question)
+        return {
+            "status": "success",
+            "result": result
         }
     except Exception as e:
         return {
