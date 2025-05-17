@@ -66,6 +66,8 @@ jobs:
           ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
           Restart=always
           RestartSec=3
+          StandardOutput=append:/var/log/legal-ai-app.log
+          StandardError=append:/var/log/legal-ai-app.error.log
 
           [Install]
           WantedBy=multi-user.target
@@ -75,18 +77,39 @@ jobs:
           sudo mv ~/legal-ai-app.service /etc/systemd/system/
           sudo chmod 644 /etc/systemd/system/legal-ai-app.service
           
+          # Create log files and set permissions
+          sudo touch /var/log/legal-ai-app.log /var/log/legal-ai-app.error.log
+          sudo chown ec2-user:ec2-user /var/log/legal-ai-app.log /var/log/legal-ai-app.error.log
+          
+          # Stop the service if it's running
+          sudo systemctl stop legal-ai-app.service || true
+          
           # Reload systemd, enable and restart service
           sudo systemctl daemon-reload
           sudo systemctl enable legal-ai-app.service
           sudo systemctl restart legal-ai-app.service
           
+          # Wait for service to start
+          sleep 5
+          
           # Check if service is running
           sudo systemctl status legal-ai-app.service
           
           # Show the last few lines of the logs
-          sudo journalctl -u legal-ai-app.service -n 20
+          echo "=== Application Logs ==="
+          sudo tail -n 20 /var/log/legal-ai-app.log
+          echo "=== Error Logs ==="
+          sudo tail -n 20 /var/log/legal-ai-app.error.log
           
-          # Make sure security group allows traffic on port 8000
-          # (Note: This should be done manually in the AWS console)
+          # Verify the service is actually running
+          if ! sudo systemctl is-active --quiet legal-ai-app.service; then
+            echo "Service failed to start. Checking logs for errors..."
+            sudo journalctl -u legal-ai-app.service -n 50
+            exit 1
+          fi
+          
+          # Test the endpoint
+          echo "Testing endpoint..."
+          curl -s http://localhost:8000/ || echo "Endpoint test failed"
           
           echo "Deployment completed"
