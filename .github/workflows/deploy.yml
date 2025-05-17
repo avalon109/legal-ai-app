@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main  # or master, depending on your default branch
+    paths:
+      - 'backend/**'
+      - '.github/workflows/deploy.yml'
 
 jobs:
   deploy:
@@ -60,7 +63,7 @@ jobs:
           User=ec2-user
           WorkingDirectory=/home/ec2-user/legal-ai-app
           Environment="PATH=/home/ec2-user/venv/bin"
-          ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/app.py
+          ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
           Restart=always
           RestartSec=3
 
