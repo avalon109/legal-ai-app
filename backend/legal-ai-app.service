@@ -1,0 +1,13 @@
+[Unit]
+Description=Legal AI API Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/path/to/your/app/backend
+Environment="PATH=/path/to/your/app/venv/bin"
+ExecStart=/path/to/your/app/venv/bin/python main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target 
