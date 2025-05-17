@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main
 
 jobs:
   deploy:
@@ -26,8 +26,54 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd /home/ubuntu/legal-ai-app  # Updated path
-          git pull origin main
+          # Update system and install required packages
+          sudo apt-get update
+          sudo apt-get install -y python3-venv python3-pip git
+
+          # Create application directory if it doesn't exist
+          mkdir -p /home/ubuntu/legal-ai-app
+          cd /home/ubuntu/legal-ai-app
+
+          # Clone or update repository
+          if [ ! -d ".git" ]; then
+            git clone https://github.com/${{ github.repository }}.git .
+          else
+            git fetch origin
+            git reset --hard origin/main
+          fi
+
+          # Create and activate virtual environment if it doesn't exist
+          if [ ! -d "venv" ]; then
+            python3 -m venv venv
+          fi
           source venv/bin/activate
+
+          # Install dependencies
           pip install -r backend/requirements.txt
-          sudo systemctl restart legal-ai-app.service 
+
+          # Create systemd service file
+          sudo tee /etc/systemd/system/legal-ai-app.service << EOF
+          [Unit]
+          Description=Legal AI API Service
+          After=network.target
+
+          [Service]
+          User=ubuntu
+          WorkingDirectory=/home/ubuntu/legal-ai-app/backend
+          Environment="PATH=/home/ubuntu/legal-ai-app/venv/bin"
+          ExecStart=/home/ubuntu/legal-ai-app/venv/bin/python main.py
+          Restart=always
+
+          [Install]
+          WantedBy=multi-user.target
+          EOF
+
+          # Reload systemd and enable service
+          sudo systemctl daemon-reload
+          sudo systemctl enable legal-ai-app.service
+          sudo systemctl restart legal-ai-app.service
+
+          # Set proper permissions
+          sudo chown -R ubuntu:ubuntu /home/ubuntu/legal-ai-app
+
+          echo "Deployment completed successfully!" 
