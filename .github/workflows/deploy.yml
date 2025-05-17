@@ -68,19 +68,25 @@ jobs:
           git clone https://github.com/avalon109/legal-ai-app.git ~/legal-ai-app
           cd ~/legal-ai-app
           
-          # Set up or update virtual environment with Python 3.12
-          python3.12 -m venv ~/venv || echo "venv already exists"
+          # Remove existing venv if it exists
+          rm -rf ~/venv
+          
+          # Set up new virtual environment with Python 3.12
+          python3.12 -m venv ~/venv
           source ~/venv/bin/activate
           
+          # Verify Python version
+          python --version
+          
           # Upgrade pip and install wheel
-          pip install --upgrade pip
-          pip install wheel
+          python -m pip install --upgrade pip
+          python -m pip install wheel
           
           # Install requirements with no cache
           if [ -f requirements.txt ]; then
-            pip install --no-cache-dir -r requirements.txt
+            python -m pip install --no-cache-dir -r requirements.txt
           elif [ -f backend/requirements.txt ]; then
-            pip install --no-cache-dir -r backend/requirements.txt
+            python -m pip install --no-cache-dir -r backend/requirements.txt
           fi
           
           # Create or update systemd service file
