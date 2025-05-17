@@ -30,6 +30,17 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         timeout: 30m
         script: |
+          # Check if Rust is already installed
+          if ! command -v rustc &> /dev/null; then
+            echo "Installing Rust..."
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+            source "$HOME/.cargo/env"
+            rustc --version
+          else
+            echo "Rust is already installed:"
+            rustc --version
+          fi
+          
           # Install git and Python 3.12
           sudo yum update -y
           sudo yum install -y git
@@ -74,7 +85,7 @@ jobs:
           [Service]
           User=ec2-user
           WorkingDirectory=/home/ec2-user/legal-ai-app/backend
-          Environment="PATH=/home/ec2-user/venv/bin"
+          Environment="PATH=/home/ec2-user/venv/bin:/home/ec2-user/.cargo/bin"
           Environment="GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"
           ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
           Restart=always
