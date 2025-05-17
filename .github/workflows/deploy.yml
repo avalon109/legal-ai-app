@@ -28,7 +28,9 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
-        timeout: 30m
+        # UPDATED LINE: Changed from 30m to 60m.
+        # You can adjust this further (e.g., 90m, 120m) if needed.
+        timeout: 60m 
         script: |
           # Check if Rust is already installed
           if ! command -v rustc &> /dev/null; then
@@ -42,11 +44,13 @@ jobs:
           fi
           
           # Install git and Python 3.12
+          echo "TIMESTAMP: $(date) - Starting system package installation"
           sudo yum update -y
           sudo yum install -y git
           sudo yum install -y amazon-linux-extras
           sudo amazon-linux-extras enable python3.12
           sudo yum install -y python3.12 python3.12-pip python3.12-devel
+          echo "TIMESTAMP: $(date) - Finished system package installation"
           
           # Clean up and clone repository
           echo "Cleaning up old deployment..."
@@ -68,11 +72,12 @@ jobs:
           source ~/venv/bin/activate
           
           # Install requirements
-          echo "Installing requirements..."
-          python -m pip install --upgrade pip
+          echo "TIMESTAMP: $(date) - Starting pip install"
+          python -m pip install --upgrade pip setuptools wheel # Ensure pip and build tools are up to date
           cd backend
           ls -la  # Debug: show files in backend directory
           python -m pip install --default-timeout=2000 -v -r requirements.txt
+          echo "TIMESTAMP: $(date) - Finished pip install"
           cd ..
           
           # Create systemd service
