@@ -45,7 +45,7 @@ jobs:
             wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz
             tar xzf Python-3.12.2.tgz
             cd Python-3.12.2
-            ./configure --enable-optimizations
+            ./configure --enable-optimizations --with-system-ffi
             sudo make altinstall
             cd ~
           else
@@ -72,10 +72,11 @@ jobs:
           rm -rf ~/venv
           
           # Set up new virtual environment with Python 3.12
-          python3.12 -m venv ~/venv
-          source ~/venv/bin/activate
+          /usr/local/bin/python3.12 -m venv ~/venv
           
-          # Verify Python version
+          # Activate virtual environment and verify Python version
+          source ~/venv/bin/activate
+          echo "Python version:"
           python --version
           
           # Upgrade pip and install wheel
@@ -88,6 +89,9 @@ jobs:
           elif [ -f backend/requirements.txt ]; then
             python -m pip install --no-cache-dir -r backend/requirements.txt
           fi
+          
+          # Verify crewai installation
+          python -c "import crewai; print('crewai version:', crewai.__version__)"
           
           # Create or update systemd service file
           cat > ~/legal-ai-app.service << 'EOL'
