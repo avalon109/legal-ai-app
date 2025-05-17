@@ -63,4 +63,4 @@ LAWS_DATABASE = {
             }
         ]
     }
-} 
+}

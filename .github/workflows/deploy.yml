@@ -72,14 +72,15 @@ jobs:
           python3.12 -m venv ~/venv || echo "venv already exists"
           source ~/venv/bin/activate
           
-          # Upgrade pip
+          # Upgrade pip and install wheel
           pip install --upgrade pip
+          pip install wheel
           
-          # Install requirements
+          # Install requirements with no cache
           if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
+            pip install --no-cache-dir -r requirements.txt
           elif [ -f backend/requirements.txt ]; then
-            pip install -r backend/requirements.txt
+            pip install --no-cache-dir -r backend/requirements.txt
           fi
           
           # Create or update systemd service file
@@ -90,7 +91,7 @@ jobs:
 
           [Service]
           User=ec2-user
-          WorkingDirectory=/home/ec2-user/legal-ai-app
+          WorkingDirectory=/home/ec2-user/legal-ai-app/backend
           Environment="PATH=/home/ec2-user/venv/bin:/home/ec2-user/.cargo/bin"
           Environment="GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"
           ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
