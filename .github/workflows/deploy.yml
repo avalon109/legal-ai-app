@@ -30,29 +30,42 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         timeout: 30m
         script: |
-          # Install Python 3.12
+          # Install git and Python 3.12
           sudo yum update -y
+          sudo yum install -y git
           sudo yum install -y amazon-linux-extras
           sudo amazon-linux-extras enable python3.12
           sudo yum install -y python3.12 python3.12-pip python3.12-devel
           
           # Clean up and clone repository
+          echo "Cleaning up old deployment..."
           rm -rf ~/legal-ai-app
+          
+          echo "Cloning repository..."
           git clone https://github.com/avalon109/legal-ai-app.git ~/legal-ai-app
+          
+          echo "Verifying repository contents..."
+          ls -la ~/legal-ai-app
+          ls -la ~/legal-ai-app/backend
+          
           cd ~/legal-ai-app
           
           # Create fresh virtual environment
+          echo "Setting up virtual environment..."
           rm -rf ~/venv
           python3.12 -m venv ~/venv
           source ~/venv/bin/activate
           
           # Install requirements
+          echo "Installing requirements..."
           python -m pip install --upgrade pip
           cd backend
+          ls -la  # Debug: show files in backend directory
           python -m pip install -r requirements.txt
           cd ..
           
           # Create systemd service
+          echo "Setting up systemd service..."
           cat > ~/legal-ai-app.service << 'EOL'
           [Unit]
           Description=Legal AI Application
@@ -80,6 +93,7 @@ jobs:
           sudo chown ec2-user:ec2-user /var/log/legal-ai-app.log /var/log/legal-ai-app.error.log
           
           # Start service
+          echo "Starting service..."
           sudo systemctl daemon-reload
           sudo systemctl enable legal-ai-app.service
           sudo systemctl restart legal-ai-app.service
