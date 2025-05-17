@@ -72,7 +72,7 @@ jobs:
           python -m pip install --upgrade pip
           cd backend
           ls -la  # Debug: show files in backend directory
-          python -m pip install -r requirements.txt
+          python -m pip install --default-timeout=2000 -v -r requirements.txt
           cd ..
           
           # Create systemd service
