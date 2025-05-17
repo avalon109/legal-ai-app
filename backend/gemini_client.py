@@ -8,9 +8,12 @@ def get_gemini_api_key():
     Get the Gemini API key from either environment variables or .env file.
     Prioritizes environment variables for production use.
     """
+    # Print all environment variables for debugging (excluding sensitive values)
+    print("Environment variables available:", [k for k in os.environ.keys() if 'KEY' not in k])
+    
     # Try to get from environment variable first (production)
-    api_key = os.getenv('GEMINI_API_KEY')
-    print(f"Initial API key from env: {api_key}")
+    api_key = os.environ.get('GEMINI_API_KEY')  # Changed from os.getenv to os.environ.get
+    print(f"Initial API key from env: {'Found' if api_key else 'Not found'}")
     
     # If not found in environment, try loading from .env file (local development)
     if not api_key:
@@ -36,9 +39,9 @@ def get_gemini_api_key():
         print(f"All .env values from dotenv: {env_values}")
         print(f"GEMINI_API_KEY in dotenv values: {'GEMINI_API_KEY' in env_values}")
         
-        load_dotenv(env_path, override=True)  # Added override=True
-        api_key = os.getenv('GEMINI_API_KEY')
-        print(f"API key after loading .env: {api_key}")
+        load_dotenv(env_path, override=True)
+        api_key = os.environ.get('GEMINI_API_KEY')  # Changed from os.getenv to os.environ.get
+        print(f"API key after loading .env: {'Found' if api_key else 'Not found'}")
     
     if not api_key:
         raise ValueError("GEMINI_API_KEY not found in environment variables or .env file")
