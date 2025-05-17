@@ -20,88 +20,87 @@ gemini_llm = ChatGoogleGenerativeAI(
     temperature=0.7
 )
 
+# Load overview.txt
+overview_path = Path(__file__).parent.parent / 'laws' / 'overview.txt'
+with open(overview_path, 'r', encoding='utf-8') as f:
+    OVERVIEW_TEXT = f.read()
+
 class LegalCrew:
     def __init__(self):
-        # Initialize the three specialized agents
-        self.legal_assessor = Agent(
-            role='Legal Question Assessor',
-            goal='Determine if a legal question can be answered using existing laws',
-            backstory="""You are an expert legal assessor with years of experience in quickly 
-            determining the nature of legal questions. Your specialty is in identifying whether 
-            a question can be answered using existing laws or if it requires additional information.""",
+        # Initialize the easy answer agent
+        self.easy_answer_agent = Agent(
+            role='Easy Answer Finder',
+            goal='Check if a question can be answered directly from the overview document',
+            backstory="""You are an expert at quickly scanning legal overview documents to find 
+            direct answers to common questions. Your specialty is identifying when a question 
+            can be answered directly from the overview without needing deeper legal analysis.""",
             verbose=True,
             allow_delegation=True,
             llm=gemini_llm
         )
 
-        self.law_selector = Agent(
-            role='Law Selection Expert',
-            goal='Select relevant laws and case law for a given legal question',
-            backstory="""You are a senior legal researcher with extensive knowledge of various 
-            legal domains. Your expertise lies in identifying the most relevant laws, case law, 
-            and legal commentaries for any given legal question.""",
-            verbose=True,
-            allow_delegation=True,
-            llm=gemini_llm
-        )
-
-        self.legal_researcher = Agent(
-            role='Legal Research Analyst',
-            goal='Analyze selected laws and provide a comprehensive legal answer',
-            backstory="""You are a skilled legal analyst with a talent for interpreting laws 
-            and case law. You excel at providing clear, accurate legal answers supported by 
-            relevant legal texts and precedents.""",
+        # Initialize the expert legal agent
+        self.legal_expert = Agent(
+            role='Legal Expert',
+            goal='Provide detailed legal analysis and answers for complex questions',
+            backstory="""You are a senior legal expert with deep knowledge of tenant rights law. 
+            You excel at analyzing complex legal questions and providing comprehensive answers 
+            based on detailed legal texts and precedents.""",
             verbose=True,
             allow_delegation=True,
             llm=gemini_llm
         )
 
     def create_tasks(self, question):
-        # Task 1: Assess if the question can be answered with existing laws
-        assessment_task = Task(
-            description=f"""Analyze the following legal question and determine if it can be 
-            answered using existing laws. Return only 'true' or 'false'.
+        # Task 1: Check if question can be answered from overview
+        easy_answer_task = Task(
+            description=f"""Check if the following question can be answered directly from the 
+            overview document. If you find a clear answer, return it. If not, return 'NEEDS_EXPERT'.
             
-            Question: {question}""",
-            agent=self.legal_assessor
+            Question: {question}
+            
+            Overview Document: {OVERVIEW_TEXT}""",
+            agent=self.easy_answer_agent
         )
 
-        # Task 2: Select relevant laws
-        selection_task = Task(
-            description=f"""Based on the following legal question, select the most relevant 
-            laws, case law, and commentaries from our database. Return the selected laws in a 
-            structured format.
+        # Task 2: Expert legal analysis if needed
+        expert_task = Task(
+            description=f"""If the previous agent returned 'NEEDS_EXPERT', provide a detailed 
+            legal analysis and answer for this question using all available legal texts.
             
             Question: {question}
             Available Laws: {LAWS_DATABASE}""",
-            agent=self.law_selector
+            agent=self.legal_expert
         )
 
-        # Task 3: Research and provide answer
-        research_task = Task(
-            description=f"""Using the selected laws and the original question, provide a 
-            comprehensive legal answer. Include specific references to laws and case law that 
-            support your answer.
-            
-            Question: {question}
-            Selected Laws: [Will be provided by previous task]""",
-            agent=self.legal_researcher
-        )
-
-        return [assessment_task, selection_task, research_task]
+        return [easy_answer_task, expert_task]
 
     def process_question(self, question):
         # Create tasks for the question
         tasks = self.create_tasks(question)
 
-        # Create and run the crew
-        crew = Crew(
-            agents=[self.legal_assessor, self.law_selector, self.legal_researcher],
-            tasks=tasks,
+        # First, run just the easy answer task
+        easy_answer_crew = Crew(
+            agents=[self.easy_answer_agent],
+            tasks=[tasks[0]],
+            verbose=2,
+            process=Process.sequential
+        )
+        
+        easy_answer_result = easy_answer_crew.kickoff()
+        
+        # If we got a direct answer, return it
+        if easy_answer_result != 'NEEDS_EXPERT':
+            return easy_answer_result
+
+        # If we need expert analysis, proceed with that
+        expert_crew = Crew(
+            agents=[self.legal_expert],
+            tasks=[tasks[1]],
             verbose=2,
             process=Process.sequential
         )
 
-        # Get the result
-        result = crew.kickoff()
+        # Get the expert result
+        result = expert_crew.kickoff()
         return result 
