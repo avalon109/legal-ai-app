@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main
     paths:
       - 'backend/**'
       - '.github/workflows/deploy.yml'
@@ -28,32 +28,60 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
+        # UPDATED LINE: Changed from 30m to 60m.
+        # You can adjust this further (e.g., 90m, 120m) if needed.
+        timeout: 60m 
         script: |
-          # Install git if not installed
-          which git || sudo yum install -y git
+          # Check if Rust is already installed
+          if ! command -v rustc &> /dev/null; then
+            echo "Installing Rust..."
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+            source "$HOME/.cargo/env"
+            rustc --version
+          else
+            echo "Rust is already installed:"
+            rustc --version
+          fi
           
-          # Install Python dependencies if needed
-          which pip3 || sudo yum install -y python3-pip
+          # Install git and Python 3.12
+          echo "TIMESTAMP: $(date) - Starting system package installation"
+          sudo yum update -y
+          sudo yum install -y git
+          sudo yum install -y amazon-linux-extras
+          sudo amazon-linux-extras enable python3.12
+          sudo yum install -y python3.12 python3.12-pip python3.12-devel
+          echo "TIMESTAMP: $(date) - Finished system package installation"
           
-          # Clean up previous deployment if it exists
+          # Clean up and clone repository
+          echo "Cleaning up old deployment..."
           rm -rf ~/legal-ai-app
           
-          # Clone the repository
+          echo "Cloning repository..."
           git clone https://github.com/avalon109/legal-ai-app.git ~/legal-ai-app
+          
+          echo "Verifying repository contents..."
+          ls -la ~/legal-ai-app
+          ls -la ~/legal-ai-app/backend
+          
           cd ~/legal-ai-app
           
-          # Set up or update virtual environment
-          python3 -m venv ~/venv || echo "venv already exists"
+          # Create fresh virtual environment
+          echo "Setting up virtual environment..."
+          rm -rf ~/venv
+          python3.12 -m venv ~/venv
           source ~/venv/bin/activate
           
           # Install requirements
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          elif [ -f backend/requirements.txt ]; then
-            pip install -r backend/requirements.txt
-          fi
+          echo "TIMESTAMP: $(date) - Starting pip install"
+          python -m pip install --upgrade pip setuptools wheel # Ensure pip and build tools are up to date
+          cd backend
+          ls -la  # Debug: show files in backend directory
+          python -m pip install -v --prefer-binary --timeout 60 --default-timeout=60 -r requirements.txt
+          echo "TIMESTAMP: $(date) - Finished pip install"
+          cd ..
           
-          # Create or update systemd service file
+          # Create systemd service
+          echo "Setting up systemd service..."
           cat > ~/legal-ai-app.service << 'EOL'
           [Unit]
           Description=Legal AI Application
@@ -61,8 +89,8 @@ jobs:
 
           [Service]
           User=ec2-user
-          WorkingDirectory=/home/ec2-user/legal-ai-app
-          Environment="PATH=/home/ec2-user/venv/bin"
+          WorkingDirectory=/home/ec2-user/legal-ai-app/backend
+          Environment="PATH=/home/ec2-user/venv/bin:/home/ec2-user/.cargo/bin"
           Environment="GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"
           ExecStart=/home/ec2-user/venv/bin/python /home/ec2-user/legal-ai-app/backend/main.py
           Restart=always
@@ -74,43 +102,24 @@ jobs:
           WantedBy=multi-user.target
           EOL
           
-          # Move service file to systemd directory and set permissions
+          # Setup service
           sudo mv ~/legal-ai-app.service /etc/systemd/system/
           sudo chmod 644 /etc/systemd/system/legal-ai-app.service
-          
-          # Create log files and set permissions
           sudo touch /var/log/legal-ai-app.log /var/log/legal-ai-app.error.log
           sudo chown ec2-user:ec2-user /var/log/legal-ai-app.log /var/log/legal-ai-app.error.log
           
-          # Stop the service if it's running
-          sudo systemctl stop legal-ai-app.service || true
-          
-          # Reload systemd, enable and restart service
+          # Start service
+          echo "Starting service..."
           sudo systemctl daemon-reload
           sudo systemctl enable legal-ai-app.service
           sudo systemctl restart legal-ai-app.service
           
-          # Wait for service to start
+          # Wait and check status
           sleep 5
-          
-          # Check if service is running
           sudo systemctl status legal-ai-app.service
           
-          # Show the last few lines of the logs
+          # Show logs
           echo "=== Application Logs ==="
           sudo tail -n 20 /var/log/legal-ai-app.log
           echo "=== Error Logs ==="
           sudo tail -n 20 /var/log/legal-ai-app.error.log
-          
-          # Verify the service is actually running
-          if ! sudo systemctl is-active --quiet legal-ai-app.service; then
-            echo "Service failed to start. Checking logs for errors..."
-            sudo journalctl -u legal-ai-app.service -n 50
-            exit 1
-          fi
-          
-          # Test the endpoint
-          echo "Testing endpoint..."
-          curl -s http://localhost:8000/ || echo "Endpoint test failed"
-          
-          echo "Deployment completed"

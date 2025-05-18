@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><toestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bwb-ng-vast-deel="http://wetten.overheid.nl/id/BWBR0014932/2014-07-01/0" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-toestand/2016-1/xsd/toestand_2016-1.xsd" bwb-id="BWBR0014932" inwerkingtreding="2014-07-01"><bwb-inputbestand/><bwb-wijzigingen/><redactionele-correcties/><wetgeving dtdversie="2.0" soort="AMvB" xml:lang="nl" stam-id="3475863" versie-id="5259202" id="C6618231" label-id="3455884" inwerkingtredingsdatum="2003-08-01">
+  <intitule bwb-ng-variabel-deel="/Intitule" stam-id="3475893" versie-id="5259122" id="C6618151" label-id="3455804" inwerking="2003-08-01" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17" status="goed">Besluit van 8 april 2003, houdende aanwijzing van zaken en diensten waarvoor de vergoeding moet worden aangemerkt als servicekosten (Besluit servicekosten)<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></intitule>
+  <citeertitel bwb-ng-variabel-deel="/Citeertitel" status="officieel" stam-id="3475903" versie-id="5259132" id="C6618161" label-id="3455814" inwerking="2003-08-01" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17">Besluit servicekosten<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></citeertitel>
+  <wet-besluit>
+    <aanhef bwb-ng-variabel-deel="/Aanhef" stam-id="3475913" versie-id="5259142" id="C6618171" label-id="3455824" inwerking="2003-08-01" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17" status="goed">
+  <wij>Wij Beatrix, bij de gratie Gods, Koningin der Nederlanden, Prinses van Oranje-Nassau, enz. enz. enz.</wij>
+  <considerans>
+    <considerans.al>Op de voordracht van Onze Minister van Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer van 14 november 2002, nr.MJZ2002093297, gedaan mede namens Onze Minister van Justitie;</considerans.al>
+    <considerans.al bevat="grondslag">Gelet op <extref doc="jci1.3:c:BWBR0005290&amp;artikel=237" verwijzing-id="1658637" bwb-id="BWBR0005290" label-id="3227664">artikel 237 lid 3 van Boek 7 van het Burgerlijk Wetboek</extref>;</considerans.al>
+    <considerans.al>De Raad van State gehoord (advies van 17 januari 2003, nr. W08.02.0517/V);</considerans.al>
+    <considerans.al>Gezien het nader rapport van Onze Minister van Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer van 2 april 2003, nr. MJZ2003025731, uitgebracht mede namens Onze Minister van Justitie;</considerans.al>
+  </considerans>
+  <afkondiging>
+    <al>Hebben goedgevonden en verstaan:</al>
+  </afkondiging>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></aanhef>
+    <wettekst>
+      <artikel bwb-ng-variabel-deel="/Artikel1" stam-id="3475923" versie-id="5259152" id="C6618181" label-id="3455834" inwerking="2003-08-01" label="Artikel 1" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr>1</nr>
+  </kop>
+  <al>De vergoeding voor de in de bij <intref verwijzing-id="1658645" bwb-id="BWBR0014932" label-id="3455874" bwb-ng-variabel-deel="/Bijlage" doc="">dit besluit behorende bijlage</intref> genoemde zaken en diensten wordt in ieder geval aangemerkt als servicekosten als bedoeld in <extref doc="jci1.3:c:BWBR0005290&amp;artikel=237" verwijzing-id="1658638" bwb-id="BWBR0005290" label-id="3227664">artikel 237 lid 3 van Boek 7 van het Burgerlijk Wetboek</extref>.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0014932&amp;artikel=1&amp;g=2014-07-01" onderdeel="artikel=1" korte-verwijzing="1.0:c:BWBR0014932&amp;artikel=1"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;artikel=1&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="artikel=1" korte-verwijzing="jci1.3:c:BWBR0014932&amp;artikel=1"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel2" code="b-2" stam-id="3475933" versie-id="5259162" id="C9614481" label-id="3455844" inwerking="2003-08-01" label="Artikel 2" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr>2</nr>
+  </kop>
+  <al>Dit besluit treedt in werking op een bij koninklijk besluit te bepalen tijdstip.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0014932&amp;artikel=2&amp;g=2014-07-01" onderdeel="artikel=2" korte-verwijzing="1.0:c:BWBR0014932&amp;artikel=2"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;artikel=2&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="artikel=2" korte-verwijzing="jci1.3:c:BWBR0014932&amp;artikel=2"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel3" code="b-3" stam-id="3475943" versie-id="5259172" id="C9614491" label-id="3455854" inwerking="2003-08-01" label="Artikel 3" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr>3</nr>
+  </kop>
+  <al>Dit besluit wordt aangehaald als: Besluit servicekosten. </al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0014932&amp;artikel=3&amp;g=2014-07-01" onderdeel="artikel=3" korte-verwijzing="1.0:c:BWBR0014932&amp;artikel=3"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;artikel=3&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="artikel=3" korte-verwijzing="jci1.3:c:BWBR0014932&amp;artikel=3"/></jcis></meta-data></artikel>
+    </wettekst>
+    <wetsluiting bwb-ng-variabel-deel="/SlotformulierEnOndertekening" stam-id="3475953" versie-id="5259182" id="C6618211" label-id="3455864" inwerking="2003-08-01" bron="Stb.2003-170" effect="nieuwe-regeling" ondertekening_bron="2003-04-08" publicatie_bron="2003-05-01" publicatie_iwt="2003-06-17" status="goed">
+  <slotformulering>
+    <al>Lasten en bevelen dat dit besluit met de daarbij behorende nota van toelichting in het Staatsblad zal worden geplaatst.</al>
+  </slotformulering>
+  <gegeven>
+    <dagtekening>
+      <plaats>'s-Gravenhage</plaats>
+      <datum isodatum="">8 april 2003</datum>
+    </dagtekening>
+    <koning>Beatrix</koning>
+  </gegeven>
+  <ondertekening>
+    <functie>De Minister van Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer,</functie>
+    <naam>
+      <achternaam>H. G. J. Kamp</achternaam>
+    </naam>
+  </ondertekening>
+  <ondertekening>
+    <functie>De Minister van Justitie,</functie>
+    <naam>
+      <achternaam>J. P. H. Donner</achternaam>
+    </naam>
+  </ondertekening>
+  <uitgifte>
+    <datum isodatum="">de eerste mei 2003</datum>
+    <ondertekening>
+      <functie>De Minister van Justitie,</functie>
+      <naam>
+        <achternaam>J. P. H. Donner </achternaam>
+      </naam>
+    </ondertekening>
+  </uitgifte>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></wetsluiting>
+    <bijlage bwb-ng-variabel-deel="/Bijlage" stam-id="3475963" versie-id="21468942" id="C30856381" label-id="3455874" inwerking="2014-07-01" label="Bijlage" bron="Stb.2014-218" effect="wijziging" ondertekening_bron="2014-06-17" publicatie_bron="2014-06-24" publicatie_iwt="2014-06-27" status="goed">
+  <kop>
+    <label>Bijlage</label>
+    <titel status="officieel">behorende bij <intref doc="jci1.3:c:BWBR0014932&amp;artikel=1&amp;z=2014-07-01&amp;g=2014-07-01" label-id="3455834" verwijzing-id="1658644" bwb-id="BWBR0014932" bwb-ng-variabel-deel="/Artikel1">artikel 1 van het Besluit servicekosten</intref></titel>
+  </kop>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie1" opmaak="default">
+    <kop>
+      <nr status="officieel">1</nr>
+      <titel status="officieel">Warmtevoorzieningen</titel>
+    </kop>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie1/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>de levering van elektriciteit, gas, olie en verwarmd water, dan wel een andere vorm van energie voor het verwarmen van de gemeenschappelijke gedeelten;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;o=a&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie1/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>het gebruik en het aflezen van warmtemeters en verbruiksmeters van de gemeenschappelijke gedeelten.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;o=b&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie2" opmaak="default">
+    <kop>
+      <nr status="officieel">2</nr>
+      <titel status="officieel">Elektriciteit, gas en water</titel>
+    </kop>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie2/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>de levering van elektriciteit, gas en water voor het verbruik in de gemeenschappelijke gedeelten en voor het gebruik van de gemeenschappelijke voorzieningen;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie2/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>het gebruik en het aflezen van meters, het verwerken van de opnamen van de meters in het overzicht, bedoeld in <extref doc="jci1.3:c:BWBR0005290&amp;artikel=259" label-id="3229744" verwijzing-id="2641652" bwb-id="BWBR0005290">artikel 259 lid 2 van Boek 7 van het Burgerlijk Wetboek</extref>, en de overige administratieve werkzaamheden in verband met de toedeling van het verbruik en de verbruikskosten aan de individuele huurders.</al>
+      </li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie3" opmaak="default">
+    <kop>
+      <nr status="officieel">3</nr>
+      <titel status="officieel"> Roerende zaken</titel>
+    </kop>
+    <al>De krachtens de huurovereenkomst mede ter beschikking gestelde roerende zaken in het woonruimtegedeelte van het gehuurde dan wel in de gemeenschappelijke gedeelten, waaronder in elk geval:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie3/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>roerende apparatuur voor het verwarmen van water;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie3/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>roerende keukenapparatuur;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie3/Onderdeelc">
+        <li.nr>c.</li.nr>
+        <al>roerende kachel;</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;o=c&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="o=c"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie3/Onderdeeld">
+        <li.nr>d.</li.nr>
+        <al>meubilering, stoffering en overige inboedel.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;o=d&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="o=d"/></jcis></meta-data></li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie4" opmaak="default">
+    <kop>
+      <nr status="officieel">4</nr>
+      <titel status="officieel"> Kleine herstellingen</titel>
+    </kop>
+  </divisie>
+  <al>Het verrichten van kleine herstellingen die krachtens <extref doc="jci1.3:c:BWBR0005290&amp;artikel=217" label-id="3232594" verwijzing-id="1658639" bwb-id="BWBR0005290">artikel 217 van Boek 7 van het Burgerlijk Wetboek</extref> of het <extref doc="jci1.3:c:BWBR0014931" label-id="3455774" verwijzing-id="1658640" bwb-id="BWBR0014931">Besluit kleine herstellingen</extref> voor rekening van de huurder komen, maar krachtens de huurovereenkomst door de verhuurder ten behoeve van de huurder worden verricht aan het woonruimtegedeelte van het gehuurde of aan de gemeenschappelijke gedeelten en aan de gemeenschappelijke voorzieningen.</al>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie5" opmaak="default">
+    <kop>
+      <nr status="officieel">5</nr>
+      <titel status="officieel"> Huisvuil</titel>
+    </kop>
+    <al>Diensten in het kader van afvoer van huisvuil, waaronder in elk geval:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie5/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>het verstrekken van vuilniszakken aan de huurder;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie5/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>het in gebruik geven van een vuilniscontainer;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie5/Onderdeelc">
+        <li.nr>c.</li.nr>
+        <al>het vervoeren van het huisvuil binnen het complex waarvan de woonruimte deel uitmaakt.</al>
+      </li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie6" opmaak="default">
+    <kop>
+      <nr status="officieel">6</nr>
+      <titel status="officieel"> Huismeester</titel>
+    </kop>
+    <al>In het kader van toezicht, veiligheid en personele ondersteuning bij de bewoning:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie6/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>het houden van toezicht op het juiste gebruik van de gemeenschappelijke gedeelten door de bewoners, hun bezoekers en derden;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie6/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>het houden van toezicht op de veiligheid van de tot de woonruimten behorende gehuurde delen en de gemeenschappelijke gedeelten;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie6/Onderdeelc">
+        <li.nr>c.</li.nr>
+        <al>het reageren op inbraakalarmering vanuit het woonruimtegedeelte van het gehuurde;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie6/Onderdeeld">
+        <li.nr>d.</li.nr>
+        <al>het verspreiden van post;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie6/Onderdeele">
+        <li.nr>e.</li.nr>
+        <al>andere diensten die een goede bewoning voor de bewoners van het woongebouw, waarvan de woonruimte deel uitmaakt, bevorderen, waaronder in elk geval het verrichten van de ten laste van huurders komende kleine herstellingen.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;o=e&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="o=e"/></jcis></meta-data></li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie7" opmaak="default">
+    <kop>
+      <nr status="officieel">7</nr>
+      <titel status="officieel"> Signaallevering</titel>
+    </kop>
+    <al>Diensten in het kader van centrale opvang en doorlevering van een signaal voor radio, televisie, computer of andere elektronische apparatuur, waaronder in elk geval:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie7/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>het in gebruik geven van roerende elektronische apparatuur voor het opvangen en het doorleveren van het signaal;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie7/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>het verrichten van kleine herstellingen aan de elektronische apparatuur voor het opvangen en het doorleveren van het signaal;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie7/Onderdeelc">
+        <li.nr>c.</li.nr>
+        <al>het afsluiten en het in stand houden van het abonnement voor het centraal ontvangen van het signaal ten behoeve van de huurders;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie7/Onderdeeld">
+        <li.nr>d.</li.nr>
+        <al>het ten behoeve van de huurders betalen van auteursrechten;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie7/Onderdeele">
+        <li.nr>e.</li.nr>
+        <al>het ten behoeve van de huurders betalen van vastrechtkosten en gesprekskosten van een alarmtelefoon in de lift naar de meldkamer.</al>
+      </li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie8" opmaak="default">
+    <kop>
+      <nr status="officieel">8</nr>
+      <titel status="officieel"> Elektronische apparatuur</titel>
+    </kop>
+    <al>Diensten in het kader van het gebruik van elektronische apparatuur, apparatuur voor videobewaking, voor alarmering en voor datanetwerken, waaronder in elk geval:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie8/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>het in gebruik geven van roerende elektronische randapparatuur;</al>
+      </li>
+      <li bwb-ng-variabel-deel="/Bijlage/Divisie8/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>het verrichten van kleine herstellingen aan de elektronische apparatuur.</al>
+      </li>
+    </lijst>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie9" opmaak="default">
+    <kop>
+      <nr status="officieel">9</nr>
+      <titel status="officieel"> Verzekeringen</titel>
+    </kop>
+    <al>Het ten behoeve van de huurder deelnemen in een gemeenschappelijke verzekering of het verzorgen van een gemeenschappelijk fonds, waarmee een risico van de huurder wordt gedekt dat tot de verplichtingen van een huurder behoort, mits het afsluiten van de verzekering of het vormen van het fonds een aanwijsbaar voordeel inhoudt voor de huurder, de uitkeringen uit de verzekeringen of de gelden of opbrengsten uit het fonds slechts voor het doel van de verzekering of het fonds worden aangewend en er jaarlijks door de verhuurder rekening en verantwoording wordt afgelegd in het overzicht, bedoeld in <extref doc="jci1.3:c:BWBR0005290&amp;artikel=259" label-id="3229744" verwijzing-id="1658642" bwb-id="BWBR0005290">artikel 259 lid 2 van Boek 7 van het Burgerlijk Wetboek</extref>.</al>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie10" opmaak="default">
+    <kop>
+      <nr status="officieel">10</nr>
+      <titel status="officieel"> Gemeenschappelijke ruimten</titel>
+    </kop>
+    <al>De in dit besluit bedoelde zaken en diensten ten behoeve van het krachtens de huurovereenkomst gegeven gebruiksrecht van gemeenschappelijke gedeelten.</al>
+  </divisie>
+  <divisie bwb-ng-variabel-deel="/Bijlage/Divisie11" opmaak="default">
+    <kop>
+      <nr status="officieel">11</nr>
+      <titel status="officieel"> Administratiekosten</titel>
+    </kop>
+    <al>De administratiekosten van het verwerken van de opnamen van de meters in het overzicht, bedoeld in <extref doc="jci1.3:c:BWBR0005290&amp;artikel=259" label-id="3229744" verwijzing-id="1658643" bwb-id="BWBR0005290">artikel 259 lid 2 van Boek 7 van het Burgerlijk Wetboek</extref>, en de overige administratieve werkzaamheden in verband met de toedeling van het verbruik en de verbruikskosten aan de individuele huurders, alsmede die van de overige in dit besluit bedoelde zaken en diensten. </al>
+  </divisie>
+<meta-data><brondata><oorspronkelijk><publicatie effect="wijziging" soort="Stb" urlidentifier="stb-2014-218"><publicatiejaar>2014</publicatiejaar><publicatienr>218</publicatienr><uitgiftedatum isodatum="2014-06-24">24-06-2014</uitgiftedatum><ondertekeningsdatum isodatum="2014-06-17">17-06-2014</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="wijziging" soort="Stb" urlidentifier="stb-2014-234"><publicatiejaar>2014</publicatiejaar><publicatienr>234</publicatienr><uitgiftedatum isodatum="2014-06-27">27-06-2014</uitgiftedatum><ondertekeningsdatum isodatum="2014-06-25">25-06-2014</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2014-07-01">01-07-2014</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></bijlage>
+  </wet-besluit>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-170"><publicatiejaar>2003</publicatiejaar><publicatienr>170</publicatienr><uitgiftedatum isodatum="2003-05-01">01-05-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-04-08">08-04-2003</ondertekeningsdatum></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2003-230"><publicatiejaar>2003</publicatiejaar><publicatienr>230</publicatienr><uitgiftedatum isodatum="2003-06-17">17-06-2003</uitgiftedatum><ondertekeningsdatum isodatum="2003-06-02">02-06-2003</ondertekeningsdatum></publicatie><inwerkingtreding.datum isodatum="2003-08-01">01-08-2003</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0014932&amp;g=2014-07-01" onderdeel="wetgeving" korte-verwijzing="1.0:c:BWBR0014932"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0014932&amp;z=2014-07-01&amp;g=2014-07-01" onderdeel="wetgeving" korte-verwijzing="jci1.3:c:BWBR0014932"/></jcis></meta-data></wetgeving></toestand>
