@@ -19,6 +19,50 @@ if (!isset($_SESSION['user_id'])) {
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Legal AI Assistant</a>
+            <div class="d-flex" id="navbarAuth">
+                <!-- Server-rendered auth state -->
+                <?php if (!isset($_SESSION['user_id'])): ?>
+                    <div id="logged-out-ui">
+                        <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                    </div>
+                <?php else: ?>
+                    <div id="logged-in-ui">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light dropdown-toggle" type="button" id="userMenu" data-bs-toggle="dropdown">
+                                <?php echo htmlspecialchars($_SESSION['username']); ?>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                                <li><a class="dropdown-item" href="my-files.php">My Files</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                
+                <!-- Client-side auth state (hidden by default) -->
+                <div id="client-logged-in-ui" style="display: none;">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="userMenuClient" data-bs-toggle="dropdown">
+                            <span id="usernameDisplay">User</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                            <li><a class="dropdown-item" href="my-files.php">My Files</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logout-btn-client">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -33,8 +77,8 @@ if (!isset($_SESSION['user_id'])) {
                 <div class="card shadow">
                     <div class="card-header bg-primary text-white">
                         <h3 class="mb-0">Tenant Rights Assistant</h3>
-                        <?php if ($_SESSION['is_anonymous']): ?>
-                            <small>Ask a question or <a href="#" class="text-white text-decoration-underline" data-bs-toggle="modal" data-bs-target="#loginModal">log in</a> if you have an ID</small>
+                        <?php if (!isset($_SESSION['user_id'])): ?>
+                            <small>Ask a question or log in to save your chat history</small>
                         <?php endif; ?>
                     </div>
                     <div class="card-body">
@@ -62,12 +106,62 @@ if (!isset($_SESSION['user_id'])) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                    <div id="login-alert" class="alert" style="display: none;"></div>
                     <form id="login-form">
                         <div class="mb-3">
-                            <label for="user-id" class="form-label">User ID</label>
-                            <input type="text" class="form-control" id="user-id" required>
+                            <label for="login-username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="login-username" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="login-password" required>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" id="forgot-password-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="register-alert" class="alert" style="display: none;"></div>
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label for="register-username" class="form-label">Username <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="register-username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="register-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-fullname" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="register-fullname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="register-phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-password" class="form-label">Password <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" id="register-password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-confirm-password" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" id="register-confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
                     </form>
                 </div>
             </div>
@@ -104,6 +198,7 @@ if (!isset($_SESSION['user_id'])) {
     });
     */
     </script>
+    <script src="assets/js/auth.js"></script>
     <script src="assets/js/chat.js"></script>
 </body>
 </html> 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Connection Test</h1>
+    
+    <div class="card">
+        <h2>Test API Endpoint</h2>
+        <p>Click the button below to test API connectivity:</p>
+        <button id="test-api">Test API Connection</button>
+        <pre id="api-result">Results will appear here...</pre>
+    </div>
+    
+    <div class="card">
+        <h2>Path Detection</h2>
+        <p>Current URL Information:</p>
+        <pre id="path-info"></pre>
+    </div>
+    
+    <script>
+        // Display path information
+        const pathInfo = document.getElementById('path-info');
+        const url = new URL(window.location.href);
+        const firstSegment = url.pathname.split('/')[1];
+        
+        pathInfo.textContent = JSON.stringify({
+            'Full URL': window.location.href,
+            'Pathname': url.pathname,
+            'First segment': firstSegment,
+            'Calculated API path': `/${firstSegment}/api`
+        }, null, 2);
+        
+        // Test API button
+        document.getElementById('test-api').addEventListener('click', async () => {
+            const result = document.getElementById('api-result');
+            result.textContent = 'Testing connection...';
+            
+            try {
+                // Use the same path logic as in auth.js
+                const apiBase = firstSegment ? `/${firstSegment}/tests` : '/tests';
+                const response = await fetch(`${apiBase}/test_api.php`);
+                
+                // Display status
+                result.textContent = `HTTP Status: ${response.status} ${response.statusText}\n\n`;
+                
+                // Try to parse JSON
+                try {
+                    const data = await response.json();
+                    result.textContent += JSON.stringify(data, null, 2);
+                } catch (parseError) {
+                    const text = await response.text();
+                    result.textContent += `Failed to parse JSON. Raw response:\n\n${text}`;
+                }
+            } catch (error) {
+                result.textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html> 
