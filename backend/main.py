@@ -27,6 +27,7 @@ class MessageRequest(BaseModel):
 
 class LegalQuestion(BaseModel):
     question: str
+    contract_text: str | None = None
 
 @app.get("/")
 async def root():
@@ -94,6 +95,14 @@ async def get_legal_advice(request: LegalQuestion):
         legal_crew = LegalCrew()
         result = legal_crew.process_question(request.question)
         logger.info(f"Legal advice response: {result}")
+
+        # Check if we need the contract
+        if "CONTRACT_NEEDED" in result:
+            return {
+                "status": "contract_needed",
+                "message": result
+            }
+
         return {
             "status": "success",
             "result": result
