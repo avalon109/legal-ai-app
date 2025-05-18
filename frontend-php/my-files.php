@@ -68,9 +68,14 @@ $username = $is_logged_in ? $_SESSION['username'] : null;
                 <div class="card shadow">
                     <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                         <h3 class="mb-0">My Files</h3>
-                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#uploadModal">
-                            <i class="bi bi-upload"></i> Upload New File
-                        </button>
+                        <div>
+                            <a href="index.php" class="btn btn-light me-2">
+                                <i class="bi bi-chat-dots"></i> Return to Chat
+                            </a>
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                                <i class="bi bi-upload"></i> Upload New File
+                            </button>
+                        </div>
                     </div>
                     <div class="card-body">
                         <!-- Authentication check banner -->

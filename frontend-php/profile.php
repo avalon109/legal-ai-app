@@ -53,8 +53,11 @@ if (!$is_logged_in) {
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                         <h3 class="mb-0">User Profile</h3>
+                        <a href="index.php" class="btn btn-light">
+                            <i class="bi bi-chat-dots"></i> Return to Chat
+                        </a>
                     </div>
                     <div class="card-body">
                         <!-- Authentication check banner -->
