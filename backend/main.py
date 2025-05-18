@@ -5,6 +5,7 @@ import json
 from pydantic import BaseModel
 from gemini_client import get_ai_explanation
 from legal_crew.legal_crew import LegalCrew
+import logging
 
 app = FastAPI()
 
@@ -17,11 +18,16 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 class MessageRequest(BaseModel):
     message: str
 
 class LegalQuestion(BaseModel):
     question: str
+    contract_text: str | None = None
 
 @app.get("/")
 async def root():
@@ -85,13 +91,24 @@ async def get_legal_advice(request: LegalQuestion):
     Endpoint to get legal advice using our crew of legal experts
     """
     try:
+        logger.info(f"Received legal advice request: {request.question}")
         legal_crew = LegalCrew()
         result = legal_crew.process_question(request.question)
+        logger.info(f"Legal advice response: {result}")
+
+        # Check if we need the contract
+        if "CONTRACT_NEEDED" in result:
+            return {
+                "status": "contract_needed",
+                "message": result
+            }
+
         return {
             "status": "success",
             "result": result
         }
     except Exception as e:
+        logger.error(f"Error processing legal advice request: {str(e)}", exc_info=True)
         return {
             "status": "error",
             "message": str(e)
