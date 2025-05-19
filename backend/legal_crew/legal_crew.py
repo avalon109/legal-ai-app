@@ -378,7 +378,8 @@ class LegalCrew:
             logger.info("Contract analysis result: %s", contract_analysis_result)
             
             # Check if we need more context
-            if "MORE_CONTEXT_NEEDED" in contract_analysis_result.upper():
+            contract_analysis_str = str(contract_analysis_result)
+            if "MORE_CONTEXT_NEEDED" in contract_analysis_str.upper():
                 return f"To properly analyze your contract, we need more information about your rental situation. Please provide additional context about your rental agreement and any specific concerns you have. MORE_CONTEXT_NEEDED"
             
             # If we have a clear analysis, return it
@@ -395,9 +396,10 @@ class LegalCrew:
         logger.info("Easy answer result: %s", easy_answer_result)
 
         # Only return early if we got a real answer (not NEEDS_EXPERT)
-        if easy_answer_result and str(easy_answer_result).strip().upper() != 'NEEDS_EXPERT' and not str(easy_answer_result).startswith("NEEDS_EXPERT"):
+        easy_answer_str = str(easy_answer_result)
+        if easy_answer_str and easy_answer_str.strip().upper() != 'NEEDS_EXPERT' and not easy_answer_str.startswith("NEEDS_EXPERT"):
             logger.info("Found direct answer in overview")
-            return str(easy_answer_result)
+            return easy_answer_str
 
         logger.info("No direct answer found, proceeding with law selection")
         law_selection_crew = Crew(
@@ -477,8 +479,11 @@ class LegalCrew:
         logger.info("Tenant argument received")
         voting_tracker.add_argument(f"Tenant's Initial Argument: {tenant_argument}")
 
+        # Convert CrewOutput to string for checking
+        tenant_argument_str = str(tenant_argument)
+
         # Check if tenant lawyer indicates we need the contract
-        if "CONTRACT_NEEDED" in tenant_argument.upper():
+        if "CONTRACT_NEEDED" in tenant_argument_str.upper():
             logger.info("Tenant lawyer indicates contract is needed")
             return f"To properly evaluate your case, we need to see your rental contract. This will help us understand the specific terms and conditions that apply to your situation. CONTRACT_NEEDED"
 
@@ -488,8 +493,11 @@ class LegalCrew:
         logger.info("Landlord argument received")
         voting_tracker.add_argument(f"Landlord's Initial Argument: {landlord_argument}")
 
+        # Convert CrewOutput to string for checking
+        landlord_argument_str = str(landlord_argument)
+
         # Check if landlord lawyer indicates we need the contract
-        if "CONTRACT_NEEDED" in landlord_argument.upper():
+        if "CONTRACT_NEEDED" in landlord_argument_str.upper():
             logger.info("Landlord lawyer indicates contract is needed")
             return f"To properly evaluate your case, we need to see your rental contract. This will help us understand the specific terms and conditions that apply to your situation. CONTRACT_NEEDED"
 
@@ -530,12 +538,13 @@ class LegalCrew:
             logger.info("Judge %s vote: %s", judge_agent.role, vote_result)
             
             # Check if judge indicates we need the contract
-            if "CONTRACT_NEEDED" in vote_result.upper():
+            vote_result_str = str(vote_result)
+            if "CONTRACT_NEEDED" in vote_result_str.upper():
                 logger.info("Judge indicates contract is needed")
                 return f"To properly evaluate your case, we need to see your rental contract. This will help us understand the specific terms and conditions that apply to your situation. CONTRACT_NEEDED"
             
             try:
-                vote_enum_member = Vote(vote_result.strip().lower())
+                vote_enum_member = Vote(vote_result_str.strip().lower())
                 voting_tracker.record_vote(judge_agent.role, vote_enum_member)
             except ValueError:
                 logger.warning("Judge %s returned an invalid vote: '%s'. Recording as 'not_sure'.", judge_agent.role, vote_result)
