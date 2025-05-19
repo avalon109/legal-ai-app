@@ -13,5 +13,8 @@ return [
     // Other development-specific settings
     'debug_mode' => true,
     'log_level' => 'debug',
-    'api_debug' => true
+    'api_debug' => true,
+    
+    // Development URL (differs from production)
+    'base_url' => 'http://localhost/tra'
 ]; 
